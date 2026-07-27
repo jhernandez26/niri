@@ -158,6 +158,7 @@ binds {
 
     // Overview & Focus Navigation
     Mod+O repeat=false { toggle-overview; }
+    Mod+Super_L repeat=false { toggle-overview; }
 
     Mod+Left  { focus-column-left; }
     Mod+Right { focus-column-right; }
