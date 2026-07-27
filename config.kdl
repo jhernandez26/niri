@@ -137,7 +137,8 @@ binds {
     Mod+Alt+M hotkey-overlay-title="Toggle Conky System Monitor" { spawn-sh "pkill -x conky || conky -d"; }
 
     // Screen locker
-    Super+Alt+L hotkey-overlay-title="Lock Screen" { spawn "swaylock"; }
+    Super+L hotkey-overlay-title="Lock Screen" { spawn-sh "noctalia msg session lock"; }
+
 
     // Window management
     Mod+Q { close-window; }
@@ -166,7 +167,7 @@ binds {
     Mod+Up    { focus-window-up; }
 
     Mod+H     { focus-column-left; }
-    Mod+L     { focus-column-right; }
+    // Mod+L     { focus-column-right; }
     Mod+J     { focus-window-down; }
     Mod+K     { focus-window-up; }
 
